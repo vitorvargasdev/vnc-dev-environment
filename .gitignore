@@ -1,0 +1,9 @@
+local/*
+!local/.gitkeep
+
+config/*
+!config/i3
+!config/i3blocks
+!config/nvim
+!config/gtk
+!config/.gitkeep
