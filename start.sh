@@ -1,9 +1,10 @@
-docker buildx build -t vncarch .
+podman build -t vncarch .
 
-docker run --rm -it \
+podman run --rm -it \
+    --privileged \
     --net=host \
-    -v /var/run/docker.sock:/var/run/docker.sock \
     -v ~/dev:/home/vncuser/dev \
     -v $(pwd)/local:/home/vncuser/.local \
     -v $(pwd)/config:/home/vncuser/.config \
+    -v $(pwd)/mozilla:/home/vncuser/.mozilla \
     vncarch

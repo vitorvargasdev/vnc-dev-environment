@@ -7,3 +7,6 @@ config/*
 !config/nvim
 !config/gtk
 !config/.gitkeep
+
+mozilla/*
+!mozilla/.gitkeep

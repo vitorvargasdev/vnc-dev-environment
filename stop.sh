@@ -1,1 +1,1 @@
-docker container ls |grep vnc |awk '{ print $1 }' |xargs docker stop
+podman container ls |grep vnc |awk '{ print $1 }' |xargs podman stop
